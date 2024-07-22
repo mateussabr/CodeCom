@@ -6,8 +6,8 @@
         <title>Criar Conta - CodeCom</title>
     </head>
     <body>
-        <form action="" method="post">
-            {{ form.csrf_tokken }}
+        <form method="post">
+            {{ form.csrf_token }}
 
             {{ form.username.label() }}
             {{ form.username() }}
