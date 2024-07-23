@@ -1,0 +1,11 @@
+main{
+    display: flex;
+    justify-content: center;
+    
+
+    & > div{
+        display: flex;
+        flex-flow: column;
+        gap: 3.5rem;
+    }
+}
