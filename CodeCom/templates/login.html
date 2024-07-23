@@ -3,9 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="../static/css/login_style.css">
         <link rel="stylesheet" href="../static/css/default.css">
-        <link rel="stylesheet" href="../static/css/create_account.css">
         <title>Document</title>
     </head>
     <body>
@@ -13,31 +12,19 @@
             <div class="container">
                 <div class="titulo">
                     <div>
-                        <h1>Seja Bem-Vindo ao CodeCom!</h1>
+                        <h1>Seja Bem-Vindo Novamente ao CodeCom!</h1>
                         <p>CodeCom é uma plataforma inovadora projetada para simplificar o processo de compartilhamento de imagens, vídeos e outros tipos de mídias com as pessoas que você mais ama😁</p>
                     </div>
                 </div>
                 <div class="cadastro">
                     <form action="" method="post">
                         {{ form.csrf_token }}
-                    
-                        <div class="foto">
-                            <div class="foto-perfil"></div>
-                        </div>
-                        <div>
-                            <div>
-                                {{ form.username() }}
-                            </div>
-                            <div>
-                                {{ form.email() }}
-                            </div>
-                        </div>
                         <div>
                             <div>
                                 {{ form.password() }}
                             </div>
                             <div>
-                                {{ form.confirm_password() }}
+                                {{ form.email() }}
                             </div>
                         </div>
                         <div class="confimar">

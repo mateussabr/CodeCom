@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --cor-fundo: #f6f6f6; 
+    --cor-fonte: #404040;
+    --cor-primaria: #404adf;
+    --cor-segundaria: #fbc305; 
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    color: var(--cor-fonte);
+    background-color: white; 
+}
+
+h1 {
+    line-height: 1.2;
+    font-size: 3.815rem; 
+}
+
+h2 {
+    line-height: 1.3; 
+    font-size: 3.052rem;
+}
+
+h3 {
+    line-height: 1.4;
+    font-size: 2.441rem;
+}
+
+p {
+    line-height: 1.6; 
+    font-size: 1rem;
+}
+
+*:focus{
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li{
+    list-style: none;
+}
+
+input{
+    border: 0.1rem solid var(--cor-fundo);
+    width: 23rem;
+    height: 3.5rem;
+    padding: 2.441rem 1.953rem;
+    border-radius: 0.25rem;
+}
+
+.botao{
+    width: 23rem;
+    height: 3.5rem;
+    padding: 1rem 1.25rem;
+    border-radius: 0.25rem;
+}
+
+input[type="submit"],
+.botao{
+    text-align: center;
+    background-color: var(--cor-primaria);
+    border: 0.1rem solid var(--cor-primaria);
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease;
+
+    &:hover,
+    &:active{
+        background-color: transparent;
+        border: 0.1rem solid var(--cor-primaria);
+        color: var(--cor-primaria);
+    }
+}
+
+.botao.segundario{
+    background-color: transparent;
+    color: var(--cor-primaria);
+}
+
+.foto{
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--cor-fundo);
+    border-radius: 50%;
+}

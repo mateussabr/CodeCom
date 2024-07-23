@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../static/css/default.css">
+        <link rel="stylesheet" href="../static/css/post.css">
+        <link rel="stylesheet" href="../static/css/navbar.css">
+        <title>Document</title>
+    </head>
+    <body>
+        {% include 'navbar.html' %}
+        <main>
+            <div class="area-post">
+                <div class="titulo">
+                    <h1>Qual vai ser o novo post?</h1>
+                    <p>Faça o upload das suas mídias na espaço abaixo e escreva uma legenda para ser compartilhada entre amigos e outros usuários</p>
+                </div>
+                <form action=""  method="post" enctype="multipart/form-data">
+                    {{ form.csrf_token }}                    
+                    <div class="imagem-post">
+                        {{ form.photo() }}
+                    </div>
+                    <div class="informacoes-post">
+                        <label for="">Descrição</label>
+                        <input type="text" class="descricao-midia">
+                    </div>
+                    <div class="confirmar">
+                        {{ form.button() }}
+                    </div>
+                </form> 
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+header{
+    padding: 1.953rem;
+    background-color: white;
+
+    & > div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        & > span{
+            font-size: 1.953rem;
+            font-weight: 700;
+            color: var(--cor-segundaria);
+        }
+
+        & > div{
+            display: flex;
+            gap: 3.5rem;
+            justify-content: end;
+
+            & > a.botao{
+                width: 10rem;
+            }
+        }
+    }
+}
+
+main{
+    width: 100rem;
+    margin: 10rem auto;
+
+    & > div.container{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+
+        & > div{
+            display: flex;
+            flex-flow: column;
+            gap: 5rem;
+            align-items: center;
+
+            & > h1{
+                text-align: center;
+            }
+
+            & > p{
+                background-color: var(--cor-fundo);
+                padding: 1rem 1.25rem;
+                border-radius: 30rem;
+                color: var(--cor-primaria);
+                box-shadow: 0 0 1rem 0.25rem rgba(0, 0, 0, 0.05);
+            }
+        }
+    }
+}
+
+div.emojis{
+    & > div{
+        position: fixed;
+        background-color: var(--cor-fundo);
+        border-radius: 1.25rem;
+        padding: 0.8rem 1rem;   
+        
+        & > p{
+            font-size: 3rem;
+        }
+    }
+
+    & > div:nth-child(1){
+        top: 12.5rem;
+        left: 10rem;
+    }
+
+    & > div:nth-child(2){
+        top: 12.5rem;
+        right: 10rem;
+    }
+    
+    & > div:nth-child(3){
+        top: 45rem;
+        left: 20rem;
+    }
+
+    & > div:nth-child(4){
+        top: 45rem;
+        right: 20rem;
+    }
+}

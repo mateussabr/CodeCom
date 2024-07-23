@@ -1,0 +1,68 @@
+main{
+    height: 100vh; 
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > .container{
+        width: 80%;
+        height: 80%; 
+        padding: 2.441rem 3.815rem; 
+        display: flex;
+        gap: 10rem;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white; 
+        background-image: url(../photo_site/2008.i605.015_freelance_people_work_set-02.jpg);
+        background-position: -50% 18rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 1rem 0.25rem rgba(0, 0, 0, 0.05);
+        
+        & > .titulo{
+            width: 125%;
+            align-self: self-start;
+
+            & > div{
+                display: flex;
+                flex-flow: column;
+                gap: 2.5rem;
+            }
+        } 
+
+        & > .cadastro{
+            background-color: var(--cor-fundo);            
+            border-radius: 0.5rem;
+            display: flex;
+            justify-content: center;
+            height: 45%;
+
+            & > form{
+                display: flex;
+                flex-flow: row wrap;
+                padding: 2.441rem;
+                gap: 2rem;
+                justify-content: space-around;                
+
+                & > div{
+                    width: 100%;
+                    display: flex;
+                    gap: 5rem;
+                    justify-content: space-between;
+                }
+
+                & > .foto{
+                    display: flex;
+                    justify-content: center;
+                }
+
+                & > .sobre > input,
+                & > .confimar > input{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

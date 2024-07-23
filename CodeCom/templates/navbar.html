@@ -1,0 +1,15 @@
+<div class="barra-lateral">
+    <nav>
+        <div class="perfil-usuario">
+            <div class="foto"></div>
+            <p>Nome</p>
+        </div>
+        <ul>
+            <li><a href="{{ url_for('feed') }}">Feed</a></li>
+            <li><a href="{{ url_for('profile', id_user=current_user.id) }}">Perfil</a></li>
+            <li><a href="{{ url_for('my_posts') }}">Minhas postagens</a></li>
+            <li><a href="{{ url_for('post') }}">Postar</a></li>
+        </ul>
+        <a href="{{ url_for('logout') }}" class="botao sair">Sair</a>
+    </nav>
+</div>

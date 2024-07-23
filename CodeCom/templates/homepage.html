@@ -3,21 +3,43 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="pradrao.css">
+        <link rel="stylesheet" href="../static/css/homepage.css">
+        <link rel="stylesheet" href="../static/css/default.css">
         <title>Document</title>
     </head>
     <body>
-        <p>Homepage</p>
-
-        <form action="" method="post">
-            {{ form.csrf_token }}
-
-            {{ form.email.label() }}
-            {{ form.email() }}
-
-            {{ form.password.label() }}
-            {{ form.password() }}
-
-            {{ form.button() }}
-        </form>
+        <header>
+            <div>
+                <span>CodeCom</span>
+                <div>
+                    <a href="{{ url_for('create_account') }}" class="botao segundario ">Criar Conta</a>
+                    <a href="{{ url_for('login') }}" class="botao">Login</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div>
+                    <p>+ de 5000000 usuários</p>
+                    <h1>Entre agora no CodeCom e comece a compartilhar fotos e mídias para amigos próximos!</h1>
+                </div>
+                <a href="{{ url_for('login') }}" class="botao">Entre já</a>
+            </div>
+        </main>
+        <div class="emojis">
+            <div>
+                <p>😘</p>
+            </div>
+            <div>
+                <p>😍</p>
+            </div>
+            <div>
+                <p>😱</p>
+            </div>
+            <div>
+                <p>😣</p>
+            </div>
+        </div>
     </body>
 </html>

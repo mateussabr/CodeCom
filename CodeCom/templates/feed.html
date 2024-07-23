@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../static/css/default.css">
+        <link rel="stylesheet" href="../static/css/feed.css">
+        <link rel="stylesheet" href="../static/css/navbar.css">
+        <title>Document</title>
+    </head>
+    <body>    
+        {% include 'navbar.html' %}
+        <main>
+            {% for post in posts %}
+                <a href="{{ url_for('profile', id_user=post.user.id) }}">    
+                    <div class="postagens">
+                        <div class="postagem">
+                            <div class="usuario">
+                                <div class="foto"></div>
+                                <p>{{ post.user.username }}</p>
+                            </div>
+                            <img src="{{ url_for('static', filename='photo_posts/{}'.format(post.image)) }}" alt="">
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
+        </main>
+    </body>
+</html>

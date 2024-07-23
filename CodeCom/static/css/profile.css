@@ -1,0 +1,44 @@
+.caixa{
+    background-color: var(--cor-fundo);
+    padding: 1.563rem 1.953rem;
+}
+
+.sobre{
+    height: 15rem;
+}
+
+.foto.perfil{
+    width: 10rem;
+    height: 10rem;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+
+    & > .perfil{
+        width: 60rem;
+        padding: 2.441rem 0;
+        display: flex;
+        gap: 6.5rem;
+        flex-flow: column;
+
+        & > .foto-do-usuario{
+            display: flex;
+            align-items: center;
+            gap: 5rem;
+        }
+
+        & > .informacoes-pessoais{
+            display: flex;
+            flex-flow: column;
+            gap: 3.5rem;
+
+            & > div{
+                display: flex;
+                flex-flow: column;
+                gap: 1.5rem;
+            }
+        }
+    }
+}

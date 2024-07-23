@@ -3,10 +3,37 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../static/css/default.css">
+        <link rel="stylesheet" href="../static/css/profile.css">
+        <link rel="stylesheet" href="../static/css/navbar.css">
         <title>Document</title>
     </head>
     <body>
-        <p>Perfil : {{user}}</p>
-        <a href="{{url_for('logout')}}">Sair</a>
+        {% include 'navbar.html' %}
+        <main>     
+            <div class="perfil">
+                <h1>Perfil</h1>
+                <div class="foto-do-usuario">
+                    <div class="foto perfil"></div>
+                </div>
+                <div class="informacoes-pessoais">
+                    <div>
+                        <p>Nome</p>
+                        <p class="caixa"> {{ user.username }}</p>
+                    </div>
+                    <div>
+                        <p>E-mail</p>
+                        <p class="caixa"> {{ user.email }} </p>
+                    </div>
+                
+                    <div>
+                        <p>Senha</p>
+                        <p class="caixa"> {{ user.password }}</p>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </main>
     </body>
 </html>
