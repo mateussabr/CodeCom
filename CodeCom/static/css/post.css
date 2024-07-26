@@ -16,6 +16,7 @@
 main{
     display: flex;
     justify-content: center;
+    padding: 3.5rem;
 
     & > .area-post{
         padding: 2.441rem 0;
